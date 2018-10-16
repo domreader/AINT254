@@ -24,14 +24,16 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private WheelEffects[] m_WheelEffects = new WheelEffects[4];
         [SerializeField] private Vector3 m_CentreOfMassOffset;
         [SerializeField] private float m_MaximumSteerAngle;
-        [Range(0, 0.5f)] [SerializeField] private float m_SteerHelper; // 0 is raw physics , 1 the car will grip in the direction it is facing
-        [Range(0, 0.5f)] [SerializeField] private float m_TractionControl; // 0 is no traction control, 1 is full interference
+        [Range(0, 1)] [SerializeField] private float m_SteerHelper; // 0 is raw physics , 1 the car will grip in the direction it is facing
+        [Range(0, 1)] [SerializeField] private float m_TractionControl; // 0 is no traction control, 1 is full interference
         [SerializeField] private float m_FullTorqueOverAllWheels;
         [SerializeField] private float m_ReverseTorque;
         [SerializeField] private float m_MaxHandbrakeTorque;
         [SerializeField] private float m_Downforce = 100f;
         [SerializeField] private SpeedType m_SpeedType;
         [SerializeField] private float m_Topspeed = 200;
+        [SerializeField] private static int NoOfGears = 5;
+        [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
 
@@ -69,7 +71,26 @@ namespace UnityStandardAssets.Vehicles.Car
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
         }
 
-                       // simple function to add a curved bias towards 1 for a value in the 0-1 range
+
+        private void GearChanging()
+        {
+            float f = Mathf.Abs(CurrentSpeed/MaxSpeed);
+            float upgearlimit = (1/(float) NoOfGears)*(m_GearNum + 1);
+            float downgearlimit = (1/(float) NoOfGears)*m_GearNum;
+
+            if (m_GearNum > 0 && f < downgearlimit)
+            {
+                m_GearNum--;
+            }
+
+            if (f > upgearlimit && (m_GearNum < (NoOfGears - 1)))
+            {
+                m_GearNum++;
+            }
+        }
+
+
+        // simple function to add a curved bias towards 1 for a value in the 0-1 range
         private static float CurveFactor(float factor)
         {
             return 1 - (1 - factor)*(1 - factor);
@@ -83,7 +104,28 @@ namespace UnityStandardAssets.Vehicles.Car
         }
 
 
-        
+        private void CalculateGearFactor()
+        {
+            float f = (1/(float) NoOfGears);
+            // gear factor is a normalised representation of the current speed within the current gear's range of speeds.
+            // We smooth towards the 'target' gear factor, so that revs don't instantly snap up or down when changing gear.
+            var targetGearFactor = Mathf.InverseLerp(f*m_GearNum, f*(m_GearNum + 1), Mathf.Abs(CurrentSpeed/MaxSpeed));
+            m_GearFactor = Mathf.Lerp(m_GearFactor, targetGearFactor, Time.deltaTime*5f);
+        }
+
+
+        private void CalculateRevs()
+        {
+            // calculate engine revs (for display / sound)
+            // (this is done in retrospect - revs are not used in force/power calculations)
+            CalculateGearFactor();
+            var gearNumFactor = m_GearNum/(float) NoOfGears;
+            var revsRangeMin = ULerp(0f, m_RevRangeBoundary, CurveFactor(gearNumFactor));
+            var revsRangeMax = ULerp(m_RevRangeBoundary, 1f, gearNumFactor);
+            Revs = ULerp(revsRangeMin, revsRangeMax, m_GearFactor);
+        }
+
+
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
             for (int i = 0; i < 4; i++)
@@ -121,7 +163,9 @@ namespace UnityStandardAssets.Vehicles.Car
             }
 
 
-            
+            CalculateRevs();
+            GearChanging();
+
             AddDownForce();
             CheckForWheelSpin();
             TractionControl();
