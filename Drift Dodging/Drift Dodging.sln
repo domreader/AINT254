@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging", "Assembly-CSharp-firstpass.csproj", "{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging.Plugins", "Drift Dodging.Plugins.csproj", "{4829B6CE-3368-37F9-F108-DEBFC4C64723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging", "Assembly-CSharp.csproj", "{E80366A3-46C7-9137-CC7D-1D9A9ECAD1B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging", "Drift Dodging.csproj", "{ED2758BC-3150-3BDC-0023-E73AF33A3AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging", "Assembly-CSharp-Editor-firstpass.csproj", "{31CD731F-17BA-4EC8-F149-B2332FE72B1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging.Editor.Plugins", "Drift Dodging.Editor.Plugins.csproj", "{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E80366A3-46C7-9137-CC7D-1D9A9ECAD1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E80366A3-46C7-9137-CC7D-1D9A9ECAD1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E80366A3-46C7-9137-CC7D-1D9A9ECAD1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E80366A3-46C7-9137-CC7D-1D9A9ECAD1B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4829B6CE-3368-37F9-F108-DEBFC4C64723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4829B6CE-3368-37F9-F108-DEBFC4C64723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4829B6CE-3368-37F9-F108-DEBFC4C64723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4829B6CE-3368-37F9-F108-DEBFC4C64723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2758BC-3150-3BDC-0023-E73AF33A3AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2758BC-3150-3BDC-0023-E73AF33A3AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2758BC-3150-3BDC-0023-E73AF33A3AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2758BC-3150-3BDC-0023-E73AF33A3AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

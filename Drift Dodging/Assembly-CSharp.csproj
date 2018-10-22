@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\finishLine.cs" />
     <Compile Include="Assets\Scripts\GateScore.cs" />
     <Compile Include="Assets\Scripts\tranformRoll.cs" />
     <Compile Include="Assets\Scripts\transform attack.cs" />
