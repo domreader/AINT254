@@ -22,8 +22,6 @@ public class AddScore : MonoBehaviour {
 
         updatedNumber = 0;
 
-        Score.text = (" " + Number);
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,7 +32,7 @@ public class AddScore : MonoBehaviour {
 
     }
 
-    private void onTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
 
         isInCollider = false;
@@ -43,17 +41,16 @@ public class AddScore : MonoBehaviour {
 
     void Update()
     {
-        if (isInCollider == true)
+        if(isInCollider == true)
         {
 
-            updatedNumber = Number++;
+            Number = (updatedNumber++);
 
-        
-            
+
         }
 
+        Score.text = ("Score : " + Number);
 
-        Score.text = ("Score : " + updatedNumber);
     }
 
 
