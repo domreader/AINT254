@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AINT 254 Turbo Transport", "Assembly-CSharp.csproj", "{173E2DAD-E890-00FB-8B53-57D40276019B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{173E2DAD-E890-00FB-8B53-57D40276019B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AINT 254 Turbo Transport", "Assembly-CSharp-Editor.csproj", "{F748ACF4-3D13-295F-3D35-5CC6EFC180FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{F748ACF4-3D13-295F-3D35-5CC6EFC180FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
