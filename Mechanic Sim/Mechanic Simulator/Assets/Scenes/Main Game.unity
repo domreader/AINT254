@@ -1070,6 +1070,8 @@ GameObject:
   - component: {fileID: 2115373705}
   - component: {fileID: 2115373707}
   - component: {fileID: 2115373706}
+  - component: {fileID: 2115373708}
+  - component: {fileID: 2115373709}
   m_Layer: 0
   m_Name: Control Box
   m_TagString: Untagged
@@ -1136,3 +1138,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2115373704}
   m_Mesh: {fileID: 4300010, guid: 38bbd09ced16fc341b8862acb6dd6256, type: 3}
+--- !u!114 &2115373708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115373704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7465bbc36a90d2d4faf7dfa2fcf81b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &2115373709
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115373704}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd3f32562be57fd4a97217e7e84f3185, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
