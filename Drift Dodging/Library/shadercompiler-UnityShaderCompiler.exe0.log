@@ -468,4 +468,7 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+<<<<<<< HEAD
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
+=======
 >>>>>>> parent of bd3f614... Revert "Adding Score to game"

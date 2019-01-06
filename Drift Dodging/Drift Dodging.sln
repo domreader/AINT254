@@ -4,9 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging.Plugins", "Drift Dodging.Plugins.csproj", "{4829B6CE-3368-37F9-F108-DEBFC4C64723}"
 EndProject
 <<<<<<< HEAD
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging", "Drift Dodging.csproj", "{ED2758BC-3150-3BDC-0023-E73AF33A3AD1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drift Dodging.Editor.Plugins", "Drift Dodging.Editor.Plugins.csproj", "{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{31CD731F-17BA-4EC8-F149-B2332FE72B1E}"
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
 =======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{31CD731F-17BA-4EC8-F149-B2332FE72B1E}"
 >>>>>>> parent of bd3f614... Revert "Adding Score to game"
@@ -17,6 +21,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 <<<<<<< HEAD
 		{4829B6CE-3368-37F9-F108-DEBFC4C64723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4829B6CE-3368-37F9-F108-DEBFC4C64723}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -31,6 +36,8 @@ Global
 		{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF347EFC-7FCE-19D1-FA49-AC38AA83CDC7}.Release|Any CPU.Build.0 = Release|Any CPU
 =======
+=======
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
 		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF5B61A-7D5C-9FB2-1E47-B4ED0B94DA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +50,9 @@ Global
 		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31CD731F-17BA-4EC8-F149-B2332FE72B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
+=======
 >>>>>>> parent of bd3f614... Revert "Adding Score to game"
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
