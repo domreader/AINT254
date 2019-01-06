@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: fd40d63c183c5b64993874b256907318
 NativeFormatImporter:
   externalObjects: {}
+<<<<<<< HEAD
   mainObjectFileID: 0
+=======
+  mainObjectFileID: 100100000
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
   userData: 
   assetBundleName: 
   assetBundleVariant: 

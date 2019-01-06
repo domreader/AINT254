@@ -66,7 +66,11 @@ MonoBehaviour:
     height: 947
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
+<<<<<<< HEAD
   m_ActualView: {fileID: 14}
+=======
+  m_ActualView: {fileID: 16}
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
@@ -327,10 +331,15 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
+=======
+    - Assets
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\domre\OneDrive\Documents\GitHub\AINT254\Drift Dodging
@@ -340,6 +349,18 @@ MonoBehaviour:
     m_SelectedIDs: f0370000
     m_LastClickedID: 14320
     m_ExpandedIDs: 0000000026370000f037000018380000283900006239000000ca9a3bffffff7f
+=======
+  - Assets
+  m_LastFoldersGridSize: 96
+  m_LastProjectPath: C:\Users\dgreader\Documents\GitHub\AINT254\Drift Dodging
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 524a0000
+    m_LastClickedID: 19026
+    m_ExpandedIDs: 00000000524a0000724b0000ac4b00002a4d0000484d000000ca9a3b
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,6 +501,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
+<<<<<<< HEAD
     width: 377
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -488,6 +510,16 @@ MonoBehaviour:
     m_SelectedIDs: 3a380000
     m_LastClickedID: 0
     m_ExpandedIDs: 62e7fffffce9ffff5aebffffb0edffff00000000
+=======
+    width: 494
+    height: 802
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2e4cf9ff
+    m_LastClickedID: -439250
+    m_ExpandedIDs: 2e4cf9ff704cf9ff2c5af9ffaa6af9ff862cfcffee2bfeff08b4feff24b1fffff6b1ffff3cb2ffff000000001c4e00006c7f0000
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,14 +570,24 @@ MonoBehaviour:
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
+<<<<<<< HEAD
   lastFramingTime: 0
+=======
+  lastFramingTime: 5010.100070159624
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.7486143, y: 1.8206465, z: -0.21642113}
     speed: 2
     m_Value: {x: -0.7486143, y: 1.8206465, z: -0.21642113}
+=======
+    m_Target: {x: 122.73, y: -12.024, z: -117.624}
+    speed: 2
+    m_Value: {x: 122.73, y: -12.024, z: -117.624}
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -569,6 +611,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.052852124, y: 0.9082339, z: -0.12087444, w: -0.3971238}
     speed: 2
     m_Value: {x: -0.052852124, y: 0.9082339, z: -0.12087444, w: -0.3971238}
@@ -576,6 +619,15 @@ MonoBehaviour:
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: {x: 0.111613624, y: -0.38702103, z: 0.047258, w: 0.91406995}
+    speed: 2
+    m_Value: {x: 0.111613624, y: -0.38702103, z: 0.047258, w: 0.91406995}
+  m_Size:
+    m_Target: 22
+    speed: 2
+    m_Value: 22
+>>>>>>> parent of bd3f614... Revert "Adding Score to game"
   m_Ortho:
     m_Target: 0
     speed: 2
