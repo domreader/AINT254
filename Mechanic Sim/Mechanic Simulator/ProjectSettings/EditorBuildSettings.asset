@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Go To Garage.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: b512f045884293840a5e45abf0e91f24
+  - enabled: 1
+    path: Assets/Scenes/Go To Road.unity
+    guid: 95b379f73e9a1e345890c550bea563f9
+  - enabled: 1
+    path: Assets/Scenes/Exit Screen.unity
+    guid: ca5f6052b17384b48a5a72bb05d49aa5
+  - enabled: 1
+    path: Assets/Scenes/Settings Menu.unity
+    guid: 1912b59e6c8557f4da0d9db22e95e2ec
   m_configObjects: {}
