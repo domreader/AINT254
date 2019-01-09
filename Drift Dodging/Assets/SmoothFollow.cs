@@ -17,11 +17,11 @@ public class SmoothFollow : MonoBehaviour {
     {
 
         Vector3 targetPosition = target.TransformPoint(new Vector3(0, 15, -20));
-        Vector3 targetRotation = target.TransformDirection(new Quaternion(0, 0, 0. 0));
+        // Vector3 targetRotation = target.TransformDirection(new Quaternion(0, 0, 0. 0));
 
         // Smoothly move the camera towards that target position
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, ref velocity, smoothTime);
+      //  transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, ref velocity, smoothTime);
 
     }
 }
