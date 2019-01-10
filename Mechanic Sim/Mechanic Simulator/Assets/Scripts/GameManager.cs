@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public void GoToRoad()
     {
-        SceneManager.LoadScene("Go To Room");
+        SceneManager.LoadScene("Go To Road");
     }
 
     public void BackToMenu()

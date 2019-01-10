@@ -62,6 +62,7 @@
     <Compile Include="Assets\exitLevel.cs" />
     <Compile Include="Assets\Scripts\Collider.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Inputs.cs" />
     <None Include="Assets\ProjectSettings\ProjectVersion.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/domre/OneDrive/Documents/GitHub/AINT254/Mechanic Sim/Mechanic Simulator/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
